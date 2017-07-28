@@ -1,0 +1,126 @@
+
+git commands
+
+git config --global user.name "Vineet Srivastava"
+git config --global user.email "knit.vineet@gmail.com"
+git config --list
+
+
+git help config
+git config --help
+
+#on the local directory
+git init
+
+git status
+
+touch .gitignore
+
+git add -A #This adds all the files to the stage
+
+git reset myFile.txt #This removes the myFile.txt from the staging area
+
+git reset #Removed everything from the staging area
+
+
+git commit -m "This is an important message"
+
+
+git log
+
+
+
+git clone https://github.com/icyvineet /home/path-where-you-wanna-clone-on-local
+
+
+
+viewing information about remote repository
+
+git remote -v #Lists the repository information
+
+git branch -a  # This lists all the branches for the repository both locally and remote
+
+
+
+
+###########Pushing changes
+git diff
+git status
+git add -A
+git commit -m "This is the check in message"
+
+############Then Push
+git pull origin master #Pulls any changes made to the branch since we last pulled/cloned
+git push origin master # Origin is the name of the remote repository and master is the branch
+
+
+
+common workflow
+
+git branch my-new-branch # creates new branch as my-new-branch
+
+git branch #This lists all the branches for the given repository
+* before the branch means that we are currently working on that branch
+
+git checkout my-new-branch #This sets my-new-branch as the current working branch
+
+git push -u origin my-new-branch #This -u options associates my-new-branch local with the remote
+so that then onwards even if we do git push/pull it will do it for my-new-branch
+
+git branch -a
+
+
+
+******************************************************************************************
+Merging chnages made to the new branch to the Master Branch
+
+git checkout master
+
+git pull origin master
+
+
+git branch merged #This lists the branches merged to the checked out branch(Master in this example)
+git merge my-new-branch
+git push origin master #This push the merged chnages to the remote master branch
+
+*******************************************************************************************
+Deleting Branch
+
+git branch --merged #This will show the branch merged
+git branch -d my-new-branch #This deletes the branch locally
+
+git branch -a #This lists all the local and remote branch. Local has been deleted but remote still exist
+git push origin --delete my-new-branch
+git branch -a # This shows that only master local and remote branch exit
+
+***************************************************************************************************
+
+PULL Request
+
+git branch feature1 #This created a new branch feature1
+git checkout feature1 #This switch to the feature1 branch
+
+make the code changes to the feature1 branch
+git add -A
+git commit -m "my msg"
+git branch
+git checkout master
+
+git pull
+
+git checkout feature1
+git push --set-upstream origin feature1
+
+after the changes have been checkin to the feature branch,
+go to the git online
+select the feature1 branch
+L! kind of icon - compare pull request
+click on that and send with a message
+Send pull request
+
+Approver/Reviewer
+go under conversation tab 
+review the changes made and merge the pull request
+merge will merge the changes to the master
+After successful merge , delete the feature1 branch
+
