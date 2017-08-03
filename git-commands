@@ -1,6 +1,7 @@
 
 git commands
 
+#Set your profile
 git config --global user.name "Vineet Srivastava"
 git config --global user.email "knit.vineet@gmail.com"
 git config --list
