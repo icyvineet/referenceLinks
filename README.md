@@ -10,3 +10,8 @@ Spring Tutorial Links-->
 https://www.youtube.com/watch?v=24rGqtxuLhc
 https://github.com/in28minutes/SpringIn28Minutes
 
+
+REST API
+https://www.youtube.com/watch?v=xkKcdK1u95s&list=PLCCK2CzCX8EXTVHe12NLKMHq5GytRJSUj
+
+
