@@ -128,3 +128,7 @@ After successful merge , delete the feature1 branch
 
 #Create a new branch based out of a specified branch
 git push origin base_branch:new_branch
+
+
+#To update the local list of remote branches:
+git remote update origin --prune
