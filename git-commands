@@ -132,3 +132,7 @@ git push origin base_branch:new_branch
 
 #To update the local list of remote branches:
 git remote update origin --prune
+
+Undo a git add - remove files staged for a git commit (one file or all by without arg)
+git reset filename.txt
+git reset
