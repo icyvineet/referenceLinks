@@ -136,3 +136,7 @@ git remote update origin --prune
 Undo a git add - remove files staged for a git commit (one file or all by without arg)
 git reset filename.txt
 git reset
+
+
+#Undo All local changes made to a branch which are not yet checked in
+git reset --hard HEAD
