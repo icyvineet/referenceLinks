@@ -140,3 +140,10 @@ git reset
 
 #Undo All local changes made to a branch which are not yet checked in
 git reset --hard HEAD
+
+#Remove Saved Password:
+git config --global --unset user.password
+
+#Update remote new branches to local
+git remote update
+
