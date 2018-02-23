@@ -1,0 +1,8 @@
+
+
+curl -X POST -u ${user_name}:${password} -i -H "Content-type: application/json" -X POST ${api_url} -d @${json_input}
+
+curl -X GET -u ${user_name}:${password} ${api_url} 
+
+curl -X PUT -u ${user_name}:${password} -i -H "Content-type: application/json" -X PUT ${api_url}  -d @${json_input}
+
