@@ -1,0 +1,17 @@
+^[a-zA-Z\\s]*$
+where ^ is start of string and $ represents end of string.
+
+You can also extend such regex to check the string size. Let's say if you want allow minimum 5 characters and maximum 20 characters
+
+^[a-zA-Z\\s]{5,20}$
+However, because whitespace \\s can be not just space-bar character, but also other charactes, such as new-line, tab, etc., you may want to limit this just to real space-bar characters using
+
+ ^[a-zA-Z ]{5,20}$
+Additionaly, you might want to limit multiple space characters to be used in sequence. If so, use
+
+^(?!.* {2,})[a-zA-Z ]{5,20}$`
+You might want string always to start and end with non-space characters. To add such feature go with
+
+^(?=.{5,20}$)(?!.* {2,})[a-zA-Z][a-zA-Z ]*[a-zA-Z]$
+
+
