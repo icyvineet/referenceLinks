@@ -147,3 +147,8 @@ git config --global --unset user.password
 #Update remote new branches to local
 git remote update
 
+#Master has moved new commits and my dev branch has moved as well
+git pull --rebase
+reference: http://gitolite.com/git-pull--rebase
+(Other option - though not very solid : git pull origin master)
+
