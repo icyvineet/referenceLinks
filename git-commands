@@ -152,3 +152,10 @@ git pull --rebase
 reference: http://gitolite.com/git-pull--rebase
 (Other option - though not very solid : git pull origin master)
 
+#Temp save your changes and change branch - stash
+git stash
+git status -s
+git stash list
+git stash pop
+[Ref: https://git-scm.com/book/en/v1/Git-Tools-Stashing]
+
