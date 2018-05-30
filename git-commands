@@ -159,3 +159,6 @@ git stash list
 git stash pop
 [Ref: https://git-scm.com/book/en/v1/Git-Tools-Stashing]
 
+
+Undo changes to only one file:
+git checkout -- <file_name>
