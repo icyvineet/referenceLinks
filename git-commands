@@ -157,6 +157,7 @@ git stash
 git status -s
 git stash list
 git stash pop
+git stash ( pop | apply ) [--index] 
 [Ref: https://git-scm.com/book/en/v1/Git-Tools-Stashing]
 
 
