@@ -163,3 +163,7 @@ git stash ( pop | apply ) [--index]
 
 Undo changes to only one file:
 git checkout -- <file_name>
+
+
+#Git revert to a previous commit
+git revert acfcaf7b  -- this will revert only impacted files and all other files will be untoched
