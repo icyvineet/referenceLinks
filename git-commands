@@ -167,3 +167,16 @@ git checkout -- <file_name>
 
 #Git revert to a previous commit
 git revert acfcaf7b  -- this will revert only impacted files and all other files will be untoched
+
+
+
+Merge Conflict
+  git status (brnach should be up to date)
+	git checkout master
+	git pull
+	git checkout branch_name
+  git merge master
+  fix the merge conflicts by opening the file either using editor (intellij)
+  git add .
+  git commit -m "addressed merge conflict"
+  git push origin branch_name
