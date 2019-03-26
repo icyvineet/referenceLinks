@@ -169,7 +169,7 @@ git checkout -- <file_name>
 git revert acfcaf7b  -- this will revert only impacted files and all other files will be untoched
 
 
-
+___________________________________________________________________________
 Merge Conflict
   git status (brnach should be up to date)
 	git checkout master
@@ -180,3 +180,12 @@ Merge Conflict
   git add .
   git commit -m "addressed merge conflict"
   git push origin branch_name
+
+_____________________________________________________________________________
+
+Push to a new branch after making changes to local master
+git push origin master:my_new_branch_name
+
+
+
+
