@@ -16,3 +16,17 @@ SELECT column-names
     ON column-name1 = column-name2
  WHERE condition
  
+
+regex:
+Delete all the blank lines
+Split based on a delimiter and pick first item
+
+
+Java:
+What is marker interface?
+how to Serialize an object
+
+Q: If you don't want to serialize any data member of a class,
+A: mark it as transient
+
+
