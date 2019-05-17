@@ -1,0 +1,18 @@
+## SQL Join:
+  LEFT JOIN Vs LEFT OUTER JOIN
+  
+  
+#### The SQL LEFT JOIN syntax
+SELECT column-names
+  FROM table-name1 LEFT JOIN table-name2 
+    ON column-name1 = column-name2
+ WHERE condition
+ 
+ 
+ 
+#### The SQL RIGHT JOIN syntax
+ SELECT column-names
+  FROM table-name1 RIGHT JOIN table-name2 
+    ON column-name1 = column-name2
+ WHERE condition
+ 
