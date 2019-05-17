@@ -30,3 +30,15 @@ Q: If you don't want to serialize any data member of a class,
 A: mark it as transient
 
 
+
+CAP Theorem:
+HBase:
+Benefit of salting
+
+
+Scala:
+Why should one use Companion Objects in Scala?
+closure in Scala
+
+Q: When should we use Scala Trait: 
+A: Traits are mostly used, when we require dependency injection. Unlike Java, through Spring framework, dependency injection is achieved through annotations. In Scala, there are no annotations or no special package to be imported. We just need to initialize the class with the trait and done, dependency is injected.
