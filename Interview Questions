@@ -72,8 +72,17 @@ A: mark it as transient
 
 
 CAP Theorem:
+Consistency- in this, all the nodes see the same data at the same time.
+Availability- it gives us a guarantee that there will be a response for every request made to the system about whether it was successful or not.
+Partition tolerance- it is the quality of NoSQL database management system which states that the system will work even if a part of the system has failed or is not working.
+
+
 HBase:
 Benefit of salting
+
+Q. What do you mean by eventual consistency in NoSQL stores?
+
+
 
 
 Scala:
@@ -84,4 +93,26 @@ Q: When should we use Scala Trait:
 A: Traits are mostly used, when we require dependency injection. Unlike Java, through Spring framework, dependency injection is achieved through annotations. In Scala, there are no annotations or no special package to be imported. We just need to initialize the class with the trait and done, dependency is injected.
 
 
+
+Factorial Program using recursion
+Sorting algorithm
+
+
+
+
+-----------
+Code in any programming language
+Input ->
+A -> 2,4, 1, 3
+B -> 67, 12, 11, 2
+C -> 15, 23, 11, 20
+
+
+Output ->
+A -> 1,4
+B -> 2, 67
+C -> 11, 23
+
+
+----------
 
