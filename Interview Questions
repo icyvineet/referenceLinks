@@ -16,6 +16,46 @@ SELECT column-names
     ON column-name1 = column-name2
  WHERE condition
  
+Q: CHAR vs VARCHAR2
+A:
+CHAR type has fixed size, so if you say it is 10 bytes, then it always stores 10 bytes in the database and it doesn't matter whether you store any text or just empty 10 bytes
+VARCHAR2 size depends on how many bytes you are actually going to store in the database. The number you specify is just the maximum number of bytes that can be stored (although 1 byte is minimum)
+
+
+Q: What are Constraints?
+A:Constraints are used to specify the limit on the data type of the table. It can be specified while creating or altering the table statement. The sample of constraints are:
+NOT NULL
+CHECK
+DEFAULT
+UNIQUE
+PRIMARY KEY
+FOREIGN KEY
+
+
+What do you mean by Denormalization?
+Denormalization refers to a technique which is used to access data from higher to lower forms of a database. It helps the database managers to increase the performance of the entire infrastructure as it introduces redundancy into a table
+
+What is the difference between DROP and TRUNCATE commands?
+DROP command removes a table and it cannot be rolled back from the database whereas TRUNCATE command removes all the rows from the table.
+
+
+
+Q: What is the need of MERGE statement?
+A: This statement allows conditional update or insertion of data into a table. It performs an UPDATE if a row exists, or an INSERT if the row does not exist.
+
+
+
+What are Views used for?
+A view refers to a logical snapshot based on a table or another view. It is used for the following reasons:
+
+Restricting access to data.
+Making complex queries simple.
+Ensuring data independence.
+Providing different views of same data.
+
+
+
+_________________________________________________________________________
 
 regex:
 Delete all the blank lines
@@ -42,3 +82,6 @@ closure in Scala
 
 Q: When should we use Scala Trait: 
 A: Traits are mostly used, when we require dependency injection. Unlike Java, through Spring framework, dependency injection is achieved through annotations. In Scala, there are no annotations or no special package to be imported. We just need to initialize the class with the trait and done, dependency is injected.
+
+
+
