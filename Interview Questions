@@ -132,3 +132,30 @@ https://docs.aws.amazon.com/redshift/latest/dg/c_choosing_dist_sort.html
 
 
  
+ 
+ 
+ 
+Hive :
+Partitioning vs Bucketing
+Static partitioning vs Dynamic partitioning
+
+
+
+
+Spark :
+
+Different components of Spark. What is an RDD/ How do you create an RDD in spark ?
+ 
+Transformation vs Action. Name some transformations and some actions. What is lazy evaluation in Spark ?
+ 
+What is DStream vs Dataset vs RDD ?
+ 
+Some consideration you look at when tuning a spark job ?
+        What is your use cases for spark streaming and structured streaming ?
+ 
+Pitfalls and issues of Spark Streaming with Kafka ?
+ 
+Checkpoints in Spark, Accumulators in Spark ?
+
+
+
