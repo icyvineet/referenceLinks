@@ -115,4 +115,20 @@ C -> 11, 23
 
 
 ----------
+Redshift:
+What is vaccum in redshift context?
+It Resorts rows and reclaims space in either a specified table or all tables in the current database.
 
+What are Sort Keys?
+A: hese columns are being used as data is loaded into the table to sort it accordingly. During this process some metadata is also generated, e.g. the min and max values of each block are stored and can be accessed directly without iterating the data every time a query executes
+
+Compound Sort Keys, are made up of all the columns that are listed in the sort key definition during the creation of the table, in the order that they are listed.
+Interleaved Sort Keys put an equal weight to each of the included columns in the sort key. If there’s no dominant column in your queries, then you might get improved query performance by creating an Interleaved Sort Key.
+
+Distribution Styles
+When you create a table, you can designate one of four distribution styles; AUTO, EVEN, KEY, or ALL.
+If you don't specify a distribution style, Amazon Redshift uses AUTO distribution.
+https://docs.aws.amazon.com/redshift/latest/dg/c_choosing_dist_sort.html
+
+
+ 
