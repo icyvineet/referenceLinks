@@ -19,6 +19,8 @@ touch .gitignore
 
 git add -A #This adds all the files to the stage
 
+
+#reset is of 3 types soft mixed and hard. default is mixed
 git reset myFile.txt #This removes the myFile.txt from the staging area
 
 git reset #Removed everything from the staging area
@@ -26,6 +28,8 @@ git reset #Removed everything from the staging area
 
 git commit -m "This is an important message"
 
+
+git commit --amend "" This amends the commited message
 
 git log
 
@@ -156,7 +160,7 @@ reference: http://gitolite.com/git-pull--rebase
 git stash
 git status -s
 git stash list
-git stash pop
+git stash pop #This removes the last stash and applies it to the branch
 git stash ( pop | apply ) [--index] 
 [Ref: https://git-scm.com/book/en/v1/Git-Tools-Stashing]
 
@@ -187,5 +191,7 @@ Push to a new branch after making changes to local master
 git push origin master:my_new_branch_name
 
 
+#Clean untracked files and directories where f stands for file and d for directories
+git clean -df
 
 
