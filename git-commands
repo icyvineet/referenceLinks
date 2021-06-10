@@ -198,3 +198,5 @@ git push origin master:my_new_branch_name
 git clean -df
 
 
+# disable ignore case
+git config core.ignorecase false
