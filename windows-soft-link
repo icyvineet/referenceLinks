@@ -1,0 +1,14 @@
+
+cmd /c mklink /J “OldLocationpath\Backup” “New Location”
+
+
+cmd /c mklink /J “C:\Users\knitv\Apple\MobileSync\Backup” “E:\iphone\vineet\Backup”
+
+
+for photos:
+source-location shouldn't be pre-existing
+destination location must be created before executing the command.
+
+C:\Users\knitv> cmd /c mklink /J "C:\Users\knitv\Pictures\vineet-iphone-photos" "E:\vineet-iphone-photos"
+Junction created for C:\Users\knitv\Pictures\vineet-iphone-photos <<===>> E:\vineet-iphone-photos
+PS C:\Users\knitv>os”
