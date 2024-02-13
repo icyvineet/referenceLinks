@@ -1,0 +1,9 @@
+Python: 
+  Download library instead of installing it
+  pip install <<library_name eg. requests>> -t .
+
+Create a zip file
+  zip -r custom_library .
+
+
+
